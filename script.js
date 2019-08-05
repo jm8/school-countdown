@@ -77,8 +77,7 @@ function range(startDate, endDate)
 
 function allDays()
 {
-  return Math.max(today(), createDate(2019, 8, 21)),
-    createDate(2020, 5, 29))
+  return range(Math.max(today(), createDate(2019, 8, 21)), createDate(2020, 5, 29))
 }
 
 function daysLeftUnfiltered()
@@ -88,6 +87,9 @@ function daysLeftUnfiltered()
 
 function daysLeftFiltered()
 {
-  return daysLeftUnfiltered().filter(isNotHoliday)
-  .filter(isNotWeekend).length;
+  return allDays().filter(isNotHoliday).filter(isNotWeekend).length;
 }
+
+
+document.getElementById("big").textContent = daysLeftFiltered()
+document.getElementById("small").textContent = daysLeftUnfiltered()
