@@ -1,0 +1,30 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  background-color: #313715;
+  color: #e2f9b8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.desc {
+  color: #bbce8a;
+}
+
+#big {
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size: 5rem;
+}
+
+#small {
+  margin-top: 2rem;
+  /* font-family: 'Courier New', Courier, monospace;   */
+  font-size: 3rem;
+
+}
